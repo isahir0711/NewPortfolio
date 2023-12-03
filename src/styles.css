@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+:root{
+    color-scheme: light dark;
+    --text-color:#000000;
+}
+.theme-dark{
+    --text-color:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

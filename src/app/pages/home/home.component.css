@@ -1,0 +1,136 @@
+.landing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+}
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.role{
+    margin-top: 12px;
+    background: -webkit-linear-gradient(90deg, rgba(108,76,244,1) 10%, rgba(19,155,246,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.personal-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+}
+
+.social-icon{
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s;
+    stroke: rgba(19,155,246,1);
+    /*stroke: var(--text-color);*/
+}
+
+.social-icon:hover{
+    transform: scale(1.2);
+    stroke:rgba(108,76,244,1);
+}
+
+.avatar-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+
+.container {
+    margin: 12px;
+    padding: 16px;
+}
+
+.personal-data {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.social {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.brief{
+    opacity: 0.8;
+}
+
+.about{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.experience{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.cards{
+    margin-top: 16px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 1fr;
+}
+
+.tech{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.stack{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.tech-icon{
+    width: 70px;
+    height: 70px;
+}
+
+.tech-stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-detail{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .personal-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .personal-data{
+        align-items: center;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}

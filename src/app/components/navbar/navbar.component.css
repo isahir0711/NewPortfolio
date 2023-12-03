@@ -1,0 +1,27 @@
+.nav-container{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    padding: 16px;
+    width: 100%;
+    z-index: 1;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750px;
+    padding: 8px;
+}
+
+.home-icon{
+    width: 40px;
+    height: auto;
+}
+
+.nav-link{
+}

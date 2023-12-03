@@ -1,0 +1,33 @@
+@if (CardInfo.url !== '') {
+    <a target="_blank" [href]="CardInfo.url">
+        <div class="card linked">
+            <img class="card-img" [src]="CardInfo.imgSrc" alt="">
+            <h3 class="card-title">{{CardInfo.title}}</h3>
+            <h3 class="card-subtitle">{{CardInfo.subtitle}}</h3>
+            <p class="card-description">{{CardInfo.description}}</p>
+            <div class="card-icons">
+                @if (CardInfo!= null) {
+                    @for (imgSrc of CardInfo.cardIcons; track $index) {
+                        <img class="card-icon" [src]="imgSrc" />
+                    }
+                }
+            </div>
+        </div>
+    </a>
+}
+@else{
+    <div class="card">
+        <img class="card-img" [src]="CardInfo.imgSrc" alt="">
+        <h3 class="card-title">{{CardInfo.title}}</h3>
+        <h3 class="card-subtitle">{{CardInfo.subtitle}}</h3>
+        <img class="card-img" [src]="CardInfo.imgSrc" alt="">
+        <p class="card-description">{{CardInfo.description}}</p>
+        <div class="card-icons">
+            @if (CardInfo!= null) {
+                @for (imgSrc of CardInfo.cardIcons; track $index) {
+                    <img class="card-icon" [src]="imgSrc" />
+                }
+            }
+        </div>
+    </div>
+}
