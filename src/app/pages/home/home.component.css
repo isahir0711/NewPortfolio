@@ -13,9 +13,7 @@ h3{
 
 .role{
     margin-top: 12px;
-    background: -webkit-linear-gradient(90deg, rgba(108,76,244,1) 10%, rgba(19,155,246,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #0d86ac;
 }
 
 .personal-info {
@@ -29,13 +27,13 @@ h3{
     width: 30px;
     height: 30px;
     transition: all 0.3s;
-    stroke: rgba(19,155,246,1);
+    stroke: #139bf6;
     /*stroke: var(--text-color);*/
 }
 
 .social-icon:hover{
     transform: scale(1.2);
-    stroke:rgba(108,76,244,1);
+    stroke:#89e3ff;
 }
 
 .avatar-img {

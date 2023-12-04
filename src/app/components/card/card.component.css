@@ -1,5 +1,5 @@
 .card {
-  padding: 12px;
+  padding: 16px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -8,6 +8,7 @@
   transition: all 0.4s;
   border: 1px solid rgba(101, 101, 101, 0.791);
   height: 100%;
+  background-color: var(--card-background);
 }
 
 .card-img {
