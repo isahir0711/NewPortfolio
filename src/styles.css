@@ -1,35 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-:root{
-    --text-color:#000000;
-    --background:#f6f8fa;
-    --navbar-background:#fff;
-    --card-background:#fff;
-}
-.theme-dark{
-    --navbar-background:#202020;
-    --background:#1c2333;
-    --text-color:#fff;
-    --card-background:#202020;
+
+:root {
+    --text-color: #000000;
+    --background: #f8f8f8;
+    --navbar-background: #fff;
+    --card-background: #fff;
+    --grad1back: radial-gradient(at 84% 37%, hsla(347, 95%, 84%, 0.31) 0px, transparent 50%);
+    --grad2back:radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 0) 0px, transparent 50%);
 }
 
-*{
+.theme-dark {
+    --navbar-background: #202020;
+    --background: #1c2333;
+    --text-color: #fff;
+    --card-background: #202020;
+    --grad1back: radial-gradient(at 13% 58%, hsla(204,92%,51%,0.31) 0px, transparent 50%);
+    --grad2back:radial-gradient(at 0% 0%, hsla(343,100%,76%,0) 0px, transparent 50%);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-li{
+
+li {
     list-style: none;
 }
 
-html{
+html {
     font-family: 'Raleway', sans-serif;
-    height: 100vh;
     background-color: var(--background);
     color: var(--text-color);
+    transition: background-color 0.4s ease-in-out;
+    background-repeat: no-repeat;
+    background-image:
+        var(--grad1back),var(--grad2back);
 }
 
-a{
+a {
     color: var(--text-color);
     text-decoration: none;
 }
