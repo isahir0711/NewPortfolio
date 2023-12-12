@@ -1,5 +1,5 @@
 .card {
-  padding: 16px;
+  padding: 24px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -9,6 +9,10 @@
   border: 1px solid rgba(101, 101, 101, 0.791);
   height: 100%;
   background-color: var(--card-background);
+    background-image:
+radial-gradient(at 7% 100%, hsla(194,85%,36%,0.13) 0px, transparent 50%),
+radial-gradient(at 99% 25%, hsla(194,85%,36%,0.37) 0px, transparent 50%);
+
 }
 
 .card-img {
@@ -33,3 +37,21 @@
   width: 35px;
   height: 35px;
 }
+
+/* @keyframes opacity-in {
+  from {
+      opacity: 0;
+      filter: blur(5px);
+  }
+
+  to {
+      opacity: 1;
+      filter: blur(0);
+  }
+}
+
+.card {
+  animation: auto linear opacity-in both;
+  animation-timeline: view();
+  animation-range: entry 35% cover 40%;
+} */
