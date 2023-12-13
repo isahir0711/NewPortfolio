@@ -8,7 +8,7 @@
             <div class="card-icons">
                 @if (CardInfo!= null) {
                     @for (imgSrc of CardInfo.cardIcons; track $index) {
-                        <img class="card-icon" [src]="imgSrc" />
+                        <img loading="lazy" class="card-icon" [src]="imgSrc" />
                     }
                 }
             </div>
@@ -17,15 +17,15 @@
 }
 @else{
     <div class="card">
-        <img class="card-img" [src]="CardInfo.imgSrc" alt="">
+        <img class="card-img" loading="lazy" [src]="CardInfo.imgSrc" alt="">
         <h3 class="card-title">{{CardInfo.title}}</h3>
         <h3 class="card-subtitle">{{CardInfo.subtitle}}</h3>
-        <img class="card-img" [src]="CardInfo.imgSrc" alt="">
+        <img class="card-img" loading="lazy" [src]="CardInfo.imgSrc" alt="">
         <p class="card-description">{{CardInfo.description}}</p>
         <div class="card-icons">
             @if (CardInfo!= null) {
                 @for (imgSrc of CardInfo.cardIcons; track $index) {
-                    <img class="card-icon" [src]="imgSrc" />
+                    <img loading="lazy" class="card-icon" [src]="imgSrc" />
                 }
             }
         </div>

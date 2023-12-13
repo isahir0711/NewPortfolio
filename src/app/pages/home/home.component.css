@@ -19,10 +19,14 @@ h3 {
 }
 
 .personal-info {
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     gap: 32px;
+    width: 100%;
+    animation: fade-in-top 0.4s;
+
 }
 
 .about {
@@ -55,7 +59,6 @@ h3 {
 
 
 .container {
-    margin: 8px;
     padding: 16px;
 }
 
@@ -73,11 +76,11 @@ h3 {
 }
 
 .brief {
+    max-width: 50ch;
     opacity: 0.8;
 }
 
 .experience {
-    margin-top: 32px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -122,10 +125,32 @@ h3 {
 }
 
 
+.badge-icon{
+    height: 2em;
+    width: auto;
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #10718f;
+}
+
+.current-stack{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
 @media only screen and (max-width: 600px) {
     .personal-info {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         text-align: center;
     }
 

@@ -1,5 +1,6 @@
 .nav-container{
     display: flex;
+    align-items: center;
     justify-content: center;
     position: fixed;
     top: 0;
@@ -32,4 +33,8 @@
 
 .theme-toggle{
     cursor: pointer;
+}
+
+.location-info{
+    font-size: 0.9em;
 }

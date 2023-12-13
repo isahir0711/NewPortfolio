@@ -1,4 +1,7 @@
 import { Component, Renderer2 } from '@angular/core';
+import { LocationService } from '../../services/location.service';
+import { HttpClient } from '@angular/common/http';
+import { tap } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +12,31 @@ import { Component, Renderer2 } from '@angular/core';
 })
 export class NavbarComponent {
 
-  constructor(private renderer:Renderer2) {
+  constructor(private http:HttpClient,private locationService:LocationService,private renderer:Renderer2) {
+    this.getCityAndState();
+  }
+
+  ipAddress:string = '';
+
+  getIPAddress(){
+    this.http.get("https://api.ipify.org/?format=json").subscribe((res:any)=>{
+      this.ipAddress = res.ip;
+    });
+  }
+
+  state = '';
+  city = '';
+
+  getCityAndState(){
+    this.getIPAddress();
+
+    this.locationService.getCityAndState(this.ipAddress).pipe(
+      tap(res=>{
+        this.state = res.region;
+        this.city = res.city;
+      })
+    ).subscribe();
+
   }
 
   ngOnInit(): void{

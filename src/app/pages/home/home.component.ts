@@ -10,6 +10,7 @@ import { CardInfo } from '../../../DTOS/cardDTO';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
   experience:CardInfo[] = [
     {title:'Avents',
     description:'Developed a web applicaciont to organize events and appointments, with a subscription functionality',
@@ -65,4 +66,7 @@ export class HomeComponent {
       $imgElement.style.opacity = '1';
     },200)
   }
+
+  
+
 }

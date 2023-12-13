@@ -1,6 +1,9 @@
 <nav id="navbar" class="nav-container solid">
     <ul class="links">
-        <li><a class="nav-link" href=""><img class="home-icon" src="/assets/imgs/binary-code.png" alt=""></a></li>
+        <div class="location-info">
+            <p>Browsing from:</p>
+            <h3>{{city}} {{state}}</h3>
+        </div>
         <li>
             <svg class="theme-toggle" (click)="toggleTheme()" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="currentColor"/>
