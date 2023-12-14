@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CardComponent } from '../../components/card/card.component';
 import { CardInfo } from '../../../DTOS/cardDTO';
 
@@ -9,7 +9,23 @@ import { CardInfo } from '../../../DTOS/cardDTO';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+
+  constructor() {
+     
+  }
+  
+  ngOnInit():void{    
+    const observer = new IntersectionObserver((entries) =>{
+      entries.forEach((entry)=>{
+        entry.target.classList.toggle('show-animate', entry.isIntersecting);
+      });
+    });
+  
+    const articles = document.querySelectorAll('.hidden-content');
+    console.log(articles);
+    articles.forEach((element) => observer.observe(element)); 
+  }
 
   experience:CardInfo[] = [
     {title:'Avents',
@@ -66,7 +82,5 @@ export class HomeComponent {
       $imgElement.style.opacity = '1';
     },200)
   }
-
-  
 
 }
