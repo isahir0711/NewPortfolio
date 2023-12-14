@@ -50,7 +50,7 @@ a {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-5%);
-    transition: opacity,filter,transform 1.3s;
+    transition: opacity,filter,transform .8s;
     transition-delay: 0ms;
     transition-delay: calc(100ms * var(--delay));
 }
