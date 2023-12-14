@@ -8,6 +8,7 @@
     --card-background: #fff;
     --grad1back: radial-gradient(at 84% 37%, hsla(346, 79%, 85%, 0.671) 0px, transparent 50%);
     --grad2back:radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 0) 0px, transparent 50%);
+    --nav-shadow:transparent;
 }
 
 .theme-dark {
@@ -17,6 +18,7 @@
     --card-background: transparent;
     --grad1back: radial-gradient(at 13% 58%, hsla(204,92%,51%,0.31) 0px, transparent 50%);
     --grad2back:radial-gradient(at 0% 0%, hsla(343,100%,76%,0) 0px, transparent 50%);
+    --nav-shadow:#11111193;
 }
 
 * {
@@ -49,7 +51,7 @@ a {
 .hidden-content{
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-5%);
+    transform: translateY(+10%);
     transition: opacity,filter,transform .8s;
     transition-delay: 0ms;
     transition-delay: calc(100ms * var(--delay));

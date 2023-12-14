@@ -18,7 +18,14 @@ export class HomeComponent implements OnInit {
   ngOnInit():void{    
     const observer = new IntersectionObserver((entries) =>{
       entries.forEach((entry)=>{
-        entry.target.classList.toggle('show-animate', entry.isIntersecting);
+        //one liner
+        //entry.target.classList.toggle('show-animate', entry.isIntersecting);
+        if(entry.isIntersecting){
+          entry.target.classList.add('show-animate');
+        }
+        else{
+          //remove it or change to one liner
+        }
       });
     });
   

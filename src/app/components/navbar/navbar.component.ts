@@ -47,7 +47,7 @@ export class NavbarComponent {
     document.addEventListener("scroll", function () {
       const navbar = document.getElementById("navbar") as HTMLElement;
     
-      if (window.scrollY > 100) {
+      if (window.scrollY > 60) {
         navbar.classList.remove('solid');
       } else {
         navbar.classList.add('solid');
