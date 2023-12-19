@@ -1,9 +1,7 @@
 <nav id="navbar" class="nav-container solid">
     <ul class="links">
-        <div class="location-info">
-            <p>You're browsing from:</p>
-            <h3 style="max-width: 20ch;">{{city}}</h3>
-            <h3>{{state}}</h3>
+        <div class="location-info-container">
+            <h3>Last visit: <span id="location-info">{{city}} {{state}} {{country}}</span></h3>
         </div>
         <li>
             <svg class="theme-toggle" (click)="toggleTheme()" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">

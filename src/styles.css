@@ -41,6 +41,11 @@ html {
         var(--grad1back),var(--grad2back);
 }
 
+h3{
+    margin: 0;
+    padding: 0;
+}
+
 a {
     color: var(--text-color);
     text-decoration: none;

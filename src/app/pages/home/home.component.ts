@@ -30,7 +30,6 @@ export class HomeComponent implements OnInit {
     });
   
     const articles = document.querySelectorAll('.hidden-content');
-    console.log(articles);
     articles.forEach((element) => observer.observe(element)); 
   }
 
