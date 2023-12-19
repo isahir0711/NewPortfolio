@@ -25,7 +25,7 @@ export class NavbarComponent {
 
     this.locationService.connectWebSocket();
 
-    this.http.get("http://api.ipify.org/?format=json").subscribe((res: any) => {
+    this.http.get("https://api.ipify.org/?format=json").subscribe((res: any) => {
 
       this.locationService.sendIp(res.ip);
     });
