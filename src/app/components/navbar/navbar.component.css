@@ -4,7 +4,7 @@
     justify-content: center;
     position: fixed;
     top: 0;
-    padding: 16px;
+    padding: 12px;
     width: 100%;
     z-index: 1;
     background: transparent;
@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: space-between;
     width: 750px;
-    padding: 8px 24px;
+    padding: 8px;
 }
 
 .home-icon {
@@ -41,6 +41,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 25ch;
     align-items: flex-start;
 }
 
@@ -48,7 +49,6 @@
     transition: all 0.8s;
     animation: fadein 0.8s;
 }
-
 
 @keyframes fadein {
     from {

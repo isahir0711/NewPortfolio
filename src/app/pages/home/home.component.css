@@ -26,16 +26,16 @@ h3 {
     width: 100%;
 }
 
-.landing-wrapper{
+.landing-wrapper {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.home-gif{
+.home-gif {
     width: 95%;
     height: 20%;
     margin-bottom: 10%;
@@ -143,12 +143,12 @@ h3 {
 }
 
 
-.badge-icon{
+.badge-icon {
     height: 2em;
     width: auto;
 }
 
-.badge{
+.badge {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -157,7 +157,7 @@ h3 {
     border: 1px solid #10718f;
 }
 
-.current-stack{
+.current-stack {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
@@ -170,6 +170,11 @@ h3 {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+
+    .landing-wrapper {
+        margin-top: 40px;
+
     }
 
     .personal-data {
