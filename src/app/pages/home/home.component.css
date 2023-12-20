@@ -38,7 +38,7 @@ h3 {
     width: 30px;
     height: 30px;
     transition: all 0.3s;
-    stroke: #139bf6;
+    stroke: #dedfe0;
     /*stroke: var(--text-color);*/
 }
 
@@ -107,8 +107,8 @@ h3 {
 }
 
 .tech-icon {
-    width: 70px;
-    height: 70px;
+    height: 65px;
+    width: auto;
 }
 
 .tech-stack {
