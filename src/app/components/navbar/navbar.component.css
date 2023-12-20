@@ -4,7 +4,7 @@
     justify-content: center;
     position: fixed;
     top: 0;
-    padding: 12px;
+    padding: 16px;
     width: 100%;
     z-index: 1;
     background: transparent;
@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: space-between;
     width: 750px;
-    padding: 8px;
+    padding: 8px 24px;
 }
 
 .home-icon {

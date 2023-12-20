@@ -79,7 +79,7 @@ export class NavbarComponent {
 
 
   ngOnInit(): void {
-    this.toggleTheme
+    this.toggleTheme();
     this.applyTheme();
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', this.onPreferredColorSchemeChange.bind(this));
 
@@ -111,6 +111,7 @@ export class NavbarComponent {
   }
 
   toggleTheme(): void {
+    
     const html = document.getElementsByTagName('html')[0];
     const isDarkTheme = html.classList.contains('theme-dark');
     this.renderer.removeClass(html, isDarkTheme ? 'theme-dark' : 'theme-light');

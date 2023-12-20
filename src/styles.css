@@ -9,6 +9,7 @@
     --grad1back: radial-gradient(at 84% 37%, hsla(346, 79%, 85%, 0.671) 0px, transparent 50%);
     --grad2back:radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 0) 0px, transparent 50%);
     --nav-shadow:transparent;
+    --gifURL: url('https://gifdb.com/images/high/8-bit-japan-countryside-guue0k7680sxgu3i.gif')
 }
 
 .theme-dark {
@@ -19,6 +20,7 @@
     --grad1back: radial-gradient(at 13% 58%, hsla(204,92%,51%,0.31) 0px, transparent 50%);
     --grad2back:radial-gradient(at 0% 0%, hsla(343,100%,76%,0) 0px, transparent 50%);
     --nav-shadow:#11111193;
+    --gifURL: url('https://i.pinimg.com/originals/6f/b9/68/6fb968d062567bde0917bec7d12fe8b4.gif')
 }
 
 * {
@@ -35,7 +37,7 @@ html {
     font-family: 'Raleway', sans-serif;
     background-color: var(--background);
     color: var(--text-color);
-    transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
     background-repeat: no-repeat;
     background-image:
         var(--grad1back),var(--grad2back);
