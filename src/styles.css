@@ -14,7 +14,7 @@
 
 .theme-dark {
     --navbar-background: #202020;
-    --background: #1c2333;
+    --background: #0f131b;
     --text-color: #fff;
     --card-background: transparent;
     --grad1back: radial-gradient(at 13% 58%, hsla(204,92%,51%,0.31) 0px, transparent 50%);
@@ -22,7 +22,7 @@
     --nav-shadow:#11111193;
     --gifURL: url('https://i.pinimg.com/originals/6f/b9/68/6fb968d062567bde0917bec7d12fe8b4.gif')
 }
-
+/*--background: #1c2333;*/
 * {
     margin: 0;
     padding: 0;
@@ -35,10 +35,13 @@ li {
 
 html {
     font-family: 'Raleway', sans-serif;
-    background-color: var(--background);
     color: var(--text-color);
-    transition: background-color 0.2s ease-in-out;
-    background-repeat: no-repeat;
+    transition: background-color 0.4s ease-in-out;
+}
+
+body{
+    
+    background-color: var(--background);
     background-image:
         var(--grad1back),var(--grad2back);
 }
@@ -72,7 +75,6 @@ a {
 
 @keyframes fade-in-top {
     from{
-        opacity: 0;
         filter: blur(10px);
         transform: translateY(-10%);
     }

@@ -24,15 +24,21 @@ h3 {
     align-items: center;
     gap: 32px;
     width: 100%;
+    animation: fade-in-top 0.3s ease-in-out;
 }
 
 .landing-wrapper {
     width: 100%;
-    height: 100vh;
+    margin: 190px 0 50px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+.down-arrow {
+    display: none;
+    justify-self: flex-end;
 }
 
 .home-gif {
@@ -46,6 +52,9 @@ h3 {
     transition: all 0.4s ease-in;
 }
 
+.banner {
+    width: 100%;
+}
 
 .about {
     display: flex;
@@ -95,7 +104,9 @@ h3 {
 
 .brief {
     max-width: 50ch;
+    font-size: 1em;
     opacity: 0.8;
+    text-wrap: pretty;
 }
 
 .experience {
@@ -109,7 +120,7 @@ h3 {
     margin-top: 16px;
     display: grid;
     gap: 12px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
     grid-auto-rows: 1fr;
 }
 
@@ -134,7 +145,7 @@ h3 {
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 18px;
 }
 
 
@@ -166,6 +177,8 @@ h3 {
 
 @media only screen and (max-width: 600px) {
     .personal-info {
+        margin-top: 25vh;
+
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -173,8 +186,12 @@ h3 {
     }
 
     .landing-wrapper {
-        margin-top: 40px;
+        margin: 0;
+        height: 100vh;
+    }
 
+    .down-arrow {
+        display: block;
     }
 
     .personal-data {

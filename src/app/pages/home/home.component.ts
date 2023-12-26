@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
     {title:'Avents',
     description:'Developed a web applicaciont to organize events and appointments, with a subscription functionality',
     cardIcons:['/assets/icons/dotnet-logo.svg',
-    '/assets/icons/c--4.svg',
+    '/assets/icons/c-sharp-c.svg',
     '/assets/icons/azure.svg',
     '/assets/icons/sql-server.svg',
     '/assets/icons/html5.svg',
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
     description:'Share songs with ♥',
     cardIcons:['/assets/icons/dotnet-logo.svg',
     '/assets/icons/angular.svg',
-    '/assets/icons/c--4.svg',
+    '/assets/icons/c-sharp-c.svg',
     '/assets/icons/typescript.svg',
     '/assets/icons/sql-server.svg',],
     url:'https://spotisurprise.vercel.app',
@@ -68,25 +68,25 @@ export class HomeComponent implements OnInit {
   ]
 
   hoverAvatarIMG(){
-    const $imgElement = document.getElementById('avatar-img') as HTMLImageElement;
+    // const $imgElement = document.getElementById('avatar-img') as HTMLImageElement;
 
-    $imgElement.style.opacity = '0';
+    // $imgElement.style.opacity = '0';
 
-    setTimeout(()=>{
-      $imgElement.src = "/assets/imgs/avatar.jpg";
-      $imgElement.style.opacity = '1';
-    },200)
+    // setTimeout(()=>{
+    //   $imgElement.src = "/assets/imgs/avatar.jpg";
+    //   $imgElement.style.opacity = '1';
+    // },200)
   }
 
   unhoverAvatarIMG(){
-    const $imgElement = document.getElementById('avatar-img') as HTMLImageElement;
+    // const $imgElement = document.getElementById('avatar-img') as HTMLImageElement;
 
-    $imgElement.style.opacity = '0';
+    // $imgElement.style.opacity = '0';
 
-    setTimeout(()=>{
-      $imgElement.src = "/assets/imgs/pp-izm.jpg";
-      $imgElement.style.opacity = '1';
-    },200)
+    // setTimeout(()=>{
+    //   $imgElement.src = "/assets/imgs/pp-izm.jpg";
+    //   $imgElement.style.opacity = '1';
+    // },200)
   }
 
 }

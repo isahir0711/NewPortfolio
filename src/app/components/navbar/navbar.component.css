@@ -46,7 +46,6 @@
 }
 
 .location-info{
-    transition: all 0.8s;
     animation: fadein 0.8s;
 }
 

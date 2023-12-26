@@ -17,9 +17,9 @@ export class NavbarComponent {
   }
 
 
-  state = '';
-  city = '';
-  country = '';
+  state = 'Oregon';
+  city = 'Gravity Falls';
+  country = '🇺🇸';
 
   getCityAndState() {
 
@@ -42,16 +42,11 @@ export class NavbarComponent {
         const flagEmoji = this.countryPrefixToFlagEmoji(res.Country);
         this.country = flagEmoji;
 
-        // Remueve la clase de animación
         locationElement.classList.remove("location-info");
-
-        // Trigger reflow para reiniciar la animación
         void locationElement.offsetWidth;
-
-        // Vuelve a agregar la clase después de un breve retraso
         setTimeout(function () {
           locationElement.classList.add("location-info");
-        },0);
+        }, 0);
 
 
       }),
@@ -111,7 +106,7 @@ export class NavbarComponent {
   }
 
   toggleTheme(): void {
-    
+
     const html = document.getElementsByTagName('html')[0];
     const isDarkTheme = html.classList.contains('theme-dark');
     this.renderer.removeClass(html, isDarkTheme ? 'theme-dark' : 'theme-light');

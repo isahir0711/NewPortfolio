@@ -12,11 +12,10 @@
     background-image:
 radial-gradient(at 7% 100%, hsla(194,85%,36%,0.13) 0px, transparent 50%),
 radial-gradient(at 99% 25%, hsla(194,85%,36%,0.37) 0px, transparent 50%);
-
 }
 
 .card-img {
-  height: auto;
+  height: 80%;
   max-width: 100%;
   border-radius: 8px;
 }
