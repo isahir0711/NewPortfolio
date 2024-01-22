@@ -1,13 +1,11 @@
 .card {
-  padding: 24px;
+  padding: 14px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   gap: 12px;
   border-radius: 12px;
   transition: all 0.4s;
   border: 1px solid rgba(101, 101, 101, 0.791);
-  height: 100%;
   background-color: var(--card-background);
     background-image:
 radial-gradient(at 7% 100%, hsla(194,85%,36%,0.13) 0px, transparent 50%),
@@ -15,7 +13,8 @@ radial-gradient(at 99% 25%, hsla(194,85%,36%,0.37) 0px, transparent 50%);
 }
 
 .card-img {
-  height: 80%;
+  max-height: 300px;
+  object-fit: cover;
   max-width: 100%;
   border-radius: 8px;
 }
@@ -28,13 +27,21 @@ radial-gradient(at 99% 25%, hsla(194,85%,36%,0.37) 0px, transparent 50%);
 .card-icons {
   margin-top: 12px;
   display: flex;
+  justify-self: flex-end;
   flex-wrap: wrap;
   gap: 16px;
 }
 
 .card-icon {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-img{
+  object-position: left top;
+  max-height: 150px;
+  }
 }
 
 /* @keyframes opacity-in {

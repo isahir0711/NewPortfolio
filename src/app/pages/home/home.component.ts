@@ -47,17 +47,17 @@ export class HomeComponent implements OnInit {
     imgSrc:''}
   ]
   projects:CardInfo[] = [
-    {title:'Weather App',subtitle:'',
-    description:'Weather app with forecast',
+    {title:'Love In Lines',subtitle:'',
+    description:'Doodle, save, and draw together in real-time on our simple, fun platform. Connect with friends for a playful drawing experience. Easy and delightful – start doodling now!',
     cardIcons:['/assets/icons/angular.svg',
     '/assets/icons/typescript.svg',
     '/assets/icons/html5.svg',
     '/assets/icons/css.svg',],
-    url:'https://weather-app-isahir0711.vercel.app',
-    imgSrc:'/assets/imgs/ss/weather-app-ss.png'},
+    url:'https://loveinlines.vercel.app',
+    imgSrc:'/assets/imgs/ss/loveinlines-ss.png'},
     
     {title:'SpotiSurprise',subtitle:'',
-    description:'Share songs with ♥',
+    description:'Share songs with ♥, Create a playlist and share a song everyday',
     cardIcons:['/assets/icons/dotnet-logo.svg',
     '/assets/icons/angular.svg',
     '/assets/icons/c-sharp-c.svg',
@@ -65,6 +65,15 @@ export class HomeComponent implements OnInit {
     '/assets/icons/sql-server.svg',],
     url:'https://spotisurprise.vercel.app',
     imgSrc:'/assets/imgs/ss/spotisurprise-ss.png'},
+    
+    {title:'Weather App',subtitle:'',
+    description:'Weather app with forecast',
+    cardIcons:['/assets/icons/angular.svg',
+    '/assets/icons/typescript.svg',
+    '/assets/icons/html5.svg',
+    '/assets/icons/css.svg',],
+    url:'https://loveinlines.vercel.app',
+    imgSrc:'/assets/imgs/ss/weather-app-ss.png'}
   ]
 
   hoverAvatarIMG(){
